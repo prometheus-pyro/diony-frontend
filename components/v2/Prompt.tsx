@@ -3,9 +3,10 @@ import PromptTag from "./PromptTag";
 
 type Props = {
   promptList?: string[];
+  className?: string;
 };
 
-const Prompt = ({ promptList }: Props) => {
+const Prompt = ({ promptList, className }: Props) => {
   const [text, setText] = useState("");
   const [tags, setTags] = useState<string[]>(promptList || []);
 

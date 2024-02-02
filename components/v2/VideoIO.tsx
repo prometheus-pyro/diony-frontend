@@ -147,8 +147,9 @@ const ForwardRef = forwardRef<HTMLVideoElement, Props>(
     return (
       <div className={`${className}`}>
         {videoUrl ? (
-          <div className="w-[512px] p-6">
+          <div className="w-full h-full">
             <video
+              className="h-full"
               ref={ref}
               src={videoUrl}
               onLoadedMetadata={handleLoadedMetadata}

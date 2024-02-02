@@ -22,7 +22,7 @@ ForwardRef.displayName = "ForwardRef";
 
 const Header = ({ className }: Props) => {
   return (
-    <nav className={`${className} flex`}>
+    <nav className={`${className} flex h-12`}>
       <div>
         <Link href={"/profile"}>프로필</Link>
       </div>

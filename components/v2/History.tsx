@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { forwardRef } from "react";
 
 type Props = {
@@ -8,9 +9,14 @@ type Props = {
 
 interface HistoryChildProps extends Props {
   title?: string;
-  prompt?: string;
-  imgSrc?: string;
+  promptList?: string[];
+  setPromptList?: any;
+  imgSrc: string;
   musicSrc?: string;
+  setMusicSrc?: any;
+  videoSrc: string;
+  setVideoSrc: any;
+
 }
 
 const ForwardRef = forwardRef<HTMLDivElement, Props>(
@@ -30,13 +36,35 @@ const HistoryElement = ({
   children,
   imgSrc,
   musicSrc,
-  prompt,
+  setMusicSrc,
+  videoSrc,
+  setVideoSrc,
+  promptList,
+  setPromptList,
   style,
   title,
 }: HistoryChildProps) => {
+
+  const onClick = () => {
+    setMusicSrc(musicSrc)
+    setVideoSrc(videoSrc)
+    setPromptList(promptList)
+  }
+
   return (
-    <div className={`${className}`}>
-      <div>HistoryElement</div>
+    <div className={`flex ${className} text-white`}>
+      <Image
+        src={imgSrc}
+        alt="HistoryImg"
+        width={64}
+        height={64}
+      />
+      <div>
+        {title}
+      </div>
+      <button onClick={onClick} >
+        프롬프트 불러오기
+      </button>
     </div>
   );
 };
@@ -46,13 +74,17 @@ const HistoryCurrent = ({
   children,
   imgSrc,
   musicSrc,
-  prompt,
+  setMusicSrc,
+  setVideoSrc,
+  videoSrc,
+  promptList,
+  setPromptList,
   style,
   title,
 }: HistoryChildProps) => {
   return (
     <div className={`${className}`}>
-      <div>{}</div>
+      <div>{children}</div>
     </div>
   );
 };
