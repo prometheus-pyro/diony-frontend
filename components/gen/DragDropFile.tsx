@@ -6,6 +6,7 @@ import React, {
   useEffect,
 } from "react";
 import "./DragDrop.scss";
+import VideoPlayer from "./VideoWithFrame";
 
 interface IFileTypes {
   id: number;
@@ -21,7 +22,7 @@ interface Props {
 const DragDrop = ({ files, setFiles }: Props) => {
   const [isDragging, setIsDragging] = useState<boolean>(false);
 
-  const [videoUrl, setVideoUrl] = useState<string>("");
+  const [videoUrl, setVideoUrl] = useState<string | null>(null);
 
   const dragRef = useRef<HTMLLabelElement | null>(null);
   const fileId = useRef<number>(0);
@@ -119,9 +120,7 @@ const DragDrop = ({ files, setFiles }: Props) => {
   return (
     <div className="DragDrop">
       {videoUrl ? (
-        <div className="DragDrop-Video">
-          <video src={videoUrl} controls />
-        </div>
+        <VideoPlayer videoSource={videoUrl}/>
       ) : (
         <>
           <input

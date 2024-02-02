@@ -7,48 +7,42 @@ type Props = {
   className?: string;
 };
 
-const ForwardRef = forwardRef<HTMLDivElement, PropsWithChildren>(({ children, className }: Props, ref) => {
-  return <div className={`flex ${className}`} ref={ref}>{children}</div>;
-});
+const ForwardRef = forwardRef<HTMLDivElement, Props>(
+  ({ children, className }: Props, ref) => {
+    return (
+      <div className={`flex ${className}`} ref={ref}>
+        {children}
+      </div>
+    );
+  }
+);
 
 ForwardRef.displayName = "ForwardRef";
 
-const SideNav = ({className}: Props) => {
+const SideNav = ({ className }: Props) => {
   return (
-    <nav className={className}>
-      <ul>
-        <li>
-          <Link href={"/profile"}>
-            프로필
-          </Link>
-        </li>
-        <li>
-          <Link href={"/generation"}>
-            음악생성
-          </Link>
-        </li>
-        <li>
-          <Link href={"/community"}>
-            커뮤니티
-          </Link>
-        </li>
-        <li>
-          <Link href={"/"}>
-            랜딩페이지
-          </Link>
-        </li>
-        <li>
-          <Link href={"/auth"}>
-            로그인
-          </Link>
-        </li>
-      </ul>
+    <nav className={`${className}`}>
+      <div>
+        <Link href={"/profile"}>프로필</Link>
+      </div>
+      <div>
+        <Link href={"/generation"}>음악생성</Link>
+      </div>
+      <div>
+        <Link href={"/community"}>커뮤니티</Link>
+      </div>
+      <div>
+        <Link href={"/"}>랜딩페이지</Link>
+      </div>
+      <div>
+        <Link href={"/auth"}>로그인</Link>
+      </div>
     </nav>
   );
 };
 
 const Content = ({ children, className }: Props) => {
-  return <div className="className">{children}</div>;
+  return <div className={className}>{children}</div>;
 };
 
 const Background = Object.assign(ForwardRef, {
