@@ -33,6 +33,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.51"],\
           ["@types/react-dom", "npm:18.2.18"],\
+          ["@types/video.js", "npm:7.3.56"],\
           ["autoprefixer", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:10.4.17"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:14.1.0"],\
@@ -45,8 +46,10 @@ const RAW_RUNTIME_STATE =
           ["react-player", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.14.1"],\
           ["remotion", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:4.0.104"],\
           ["sass", "npm:1.70.0"],\
+          ["tailwind-scrollbar-hide", "npm:1.1.7"],\
           ["tailwindcss", "npm:3.4.1"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
+          ["wavesurfer.js", "npm:7.7.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1350,6 +1353,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/@types-scheduler-npm-0.16.8-303819b439-10c0.zip/node_modules/@types/scheduler/",\
         "packageDependencies": [\
           ["@types/scheduler", "npm:0.16.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/video.js", [\
+      ["npm:7.3.56", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/@types-video.js-npm-7.3.56-1eeea33968-10c0.zip/node_modules/@types/video.js/",\
+        "packageDependencies": [\
+          ["@types/video.js", "npm:7.3.56"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2663,6 +2675,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.11.16"],\
           ["@types/react", "npm:18.2.51"],\
           ["@types/react-dom", "npm:18.2.18"],\
+          ["@types/video.js", "npm:7.3.56"],\
           ["autoprefixer", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:10.4.17"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-next", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:14.1.0"],\
@@ -2675,8 +2688,10 @@ const RAW_RUNTIME_STATE =
           ["react-player", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.14.1"],\
           ["remotion", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:4.0.104"],\
           ["sass", "npm:1.70.0"],\
+          ["tailwind-scrollbar-hide", "npm:1.1.7"],\
           ["tailwindcss", "npm:3.4.1"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
+          ["wavesurfer.js", "npm:7.7.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -6687,6 +6702,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["tailwind-scrollbar-hide", [\
+      ["npm:1.1.7", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/tailwind-scrollbar-hide-npm-1.1.7-537baa5b75-10c0.zip/node_modules/tailwind-scrollbar-hide/",\
+        "packageDependencies": [\
+          ["tailwind-scrollbar-hide", "npm:1.1.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["tailwindcss", [\
       ["npm:3.4.1", {\
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/tailwindcss-npm-3.4.1-3903e2abcc-10c0.zip/node_modules/tailwindcss/",\
@@ -7106,6 +7130,15 @@ const RAW_RUNTIME_STATE =
           ["watchpack", "npm:2.4.0"],\
           ["glob-to-regexp", "npm:0.4.1"],\
           ["graceful-fs", "npm:4.2.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["wavesurfer.js", [\
+      ["npm:7.7.1", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/wavesurfer.js-npm-7.7.1-9d1d583629-10c0.zip/node_modules/wavesurfer.js/",\
+        "packageDependencies": [\
+          ["wavesurfer.js", "npm:7.7.1"]\
         ],\
         "linkType": "HARD"\
       }]\

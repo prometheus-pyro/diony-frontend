@@ -954,6 +954,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/video.js@npm:^7.3.56":
+  version: 7.3.56
+  resolution: "@types/video.js@npm:7.3.56"
+  checksum: 10c0/d6cbff47a1dd3d0c45ddd169f192ed681b195806f8c5078a6961950b388b763dd69b2243f0477df3152e1f2ed2169924a25a1779cccd0cb411d0ddb08d9a56ca
+  languageName: node
+  linkType: hard
+
 "@types/yauzl@npm:^2.9.1":
   version: 2.10.3
   resolution: "@types/yauzl@npm:2.10.3"
@@ -2007,6 +2014,7 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
+    "@types/video.js": "npm:^7.3.56"
     autoprefixer: "npm:^10.0.1"
     eslint: "npm:^8"
     eslint-config-next: "npm:14.1.0"
@@ -2019,8 +2027,10 @@ __metadata:
     react-player: "npm:^2.14.1"
     remotion: "npm:^4.0.104"
     sass: "npm:^1.70.0"
+    tailwind-scrollbar-hide: "npm:^1.1.7"
     tailwindcss: "npm:^3.3.0"
     typescript: "npm:^5.3.3"
+    wavesurfer.js: "npm:^7.7.1"
   languageName: unknown
   linkType: soft
 
@@ -5390,6 +5400,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tailwind-scrollbar-hide@npm:^1.1.7":
+  version: 1.1.7
+  resolution: "tailwind-scrollbar-hide@npm:1.1.7"
+  checksum: 10c0/1027ca724c51a43da9a9a9f730f707652bcaded6f94d82fd445e349ee19bd34d8c1312e3e075193ec89c0524d824e716a06d646ca757913f4df0f4f5faec8fe4
+  languageName: node
+  linkType: hard
+
 "tailwindcss@npm:^3.3.0":
   version: 3.4.1
   resolution: "tailwindcss@npm:3.4.1"
@@ -5740,6 +5757,13 @@ __metadata:
     glob-to-regexp: "npm:^0.4.1"
     graceful-fs: "npm:^4.1.2"
   checksum: 10c0/c5e35f9fb9338d31d2141d9835643c0f49b5f9c521440bb648181059e5940d93dd8ed856aa8a33fbcdd4e121dad63c7e8c15c063cf485429cd9d427be197fe62
+  languageName: node
+  linkType: hard
+
+"wavesurfer.js@npm:^7.7.1":
+  version: 7.7.1
+  resolution: "wavesurfer.js@npm:7.7.1"
+  checksum: 10c0/e80e25a9e6e24d80d76b514b752517fb6258995709406d5a93b1b4c1b8533bbe86919569528c61231407040b86a5efe15e8e0b35c598fc1301f26813a9ad7886
   languageName: node
   linkType: hard
 

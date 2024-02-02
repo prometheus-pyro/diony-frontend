@@ -5,12 +5,13 @@ import { forwardRef } from "react";
 type Props = {
   children?: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 };
 
 const ForwardRef = forwardRef<HTMLDivElement, Props>(
-  ({ children, className }: Props, ref) => {
+  ({ children, className, style }: Props, ref) => {
     return (
-      <div className={`flex ${className}`} ref={ref}>
+      <div style={style} className={`flex flex-col ${className}`} ref={ref}>
         {children}
       </div>
     );
@@ -19,9 +20,9 @@ const ForwardRef = forwardRef<HTMLDivElement, Props>(
 
 ForwardRef.displayName = "ForwardRef";
 
-const SideNav = ({ className }: Props) => {
+const Header = ({ className }: Props) => {
   return (
-    <nav className={`${className}`}>
+    <nav className={`${className} flex`}>
       <div>
         <Link href={"/profile"}>프로필</Link>
       </div>
@@ -46,7 +47,7 @@ const Content = ({ children, className }: Props) => {
 };
 
 const Background = Object.assign(ForwardRef, {
-  SideNav,
+  Header,
   Content,
 });
 

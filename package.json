@@ -20,12 +20,15 @@
     "react-drag-drop-files": "^2.3.10",
     "react-player": "^2.14.1",
     "remotion": "^4.0.104",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "wavesurfer.js": "^7.7.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/video.js": "^7.3.56",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",

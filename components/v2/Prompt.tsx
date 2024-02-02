@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import Tag from "./Tag";
-import "@/styles/scrollbar.scss";
+import PromptTag from "./PromptTag";
 
-type Props = {};
+type Props = {
+  promptList?: string[];
+};
 
-const Prompt = ({}: Props) => {
+const Prompt = ({ promptList }: Props) => {
   const [text, setText] = useState("");
-  const [tags, setTags] = useState<string[]>([]);
+  const [tags, setTags] = useState<string[]>(promptList || []);
 
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setText(e.target.value);
@@ -24,12 +25,10 @@ const Prompt = ({}: Props) => {
   };
 
   return (
-    <div className="flex flex-col justify-center space-y-6 p-5 bg-[#5F5F5F] bg-opacity-30 rounded-lg">
-      <div className="flex flex-col h-32 overflow-y-scroll scroll">
-        {tags.map((tag, id) => (
-          <Tag key={id} text={tag} />
-        ))}
-      </div>
+    <div>
+      {tags?.map((prompt: string, index: number) => (
+        <PromptTag key={index} prompt={prompt} />
+      ))}
       <textarea
         className="bg-gray-300 resize-none rounded-lg text-lg p-2"
         placeholder="원하는 상황, 느낌 등을 추가해도 돼요"
@@ -37,7 +36,7 @@ const Prompt = ({}: Props) => {
         value={text}
         onChange={handleTextChange}
       />
-      <button className="bg-gradient-to-b drop-shadow-lg rounded-lg w-fit p-2 from-[#D888DF] to-[#E630F5]" onClick={handleGenerate}>GENERATE</button>
+      <button onClick={handleGenerate}></button>
     </div>
   );
 };

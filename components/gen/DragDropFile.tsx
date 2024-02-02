@@ -118,11 +118,11 @@ const DragDrop = ({ files, setFiles }: Props) => {
   }, [initDragEvents, resetDragEvents]);
 
   return (
-    <div className="DragDrop">
+    <div className="DragDrop w-full h-full">
       {videoUrl ? (
         <VideoPlayer videoSource={videoUrl}/>
       ) : (
-        <>
+        <div className=" border-2 border-black rounded-lg w-full h-full">
           <input
             type="file"
             id="fileUpload"
@@ -132,7 +132,7 @@ const DragDrop = ({ files, setFiles }: Props) => {
           />
 
           <label
-            className={isDragging ? "DragDrop-File-Dragging" : "DragDrop-File"}
+            className={isDragging ? " w-full h-full flex justify-center items-center" : " w-full h-full flex justify-center items-center"}
             htmlFor="fileUpload"
             ref={dragRef}
           >
@@ -160,7 +160,7 @@ const DragDrop = ({ files, setFiles }: Props) => {
                 );
               })}
           </div>
-        </>
+        </div>
       )}
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "@/styles/globals.scss";
+import "@/styles/slider.scss";
 
 type Props = {
   videoSource?: string;
@@ -52,9 +53,9 @@ const VideoPlayer = ({ videoSource, audioSource }: Props) => {
   }, [videoRef, audioRef]); 
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items w-full h-full space-y-4">
       {videoSource && (
-        <div className="w-[300px] h-auto">
+        <div className=" w-full p-6">
           <video
             ref={videoRef}
             src={videoSource}
@@ -78,7 +79,7 @@ const VideoPlayer = ({ videoSource, audioSource }: Props) => {
         min="0"
         max={(videoRef.current as any)?.duration || 100}
         step="1"
-        className="w-[300px] h-auto"
+        className="w-full h-auto slider"
       />
       <input
         type="range"
@@ -87,7 +88,7 @@ const VideoPlayer = ({ videoSource, audioSource }: Props) => {
         min="0"
         max={(videoRef.current as any)?.duration || 100}
         step="1"
-        className="w-[300px] h-auto"
+        className="w-full h-auto slider"
       />
     </div>
   );

@@ -4,7 +4,7 @@ type Props = {}
 
 const HistoryCurrent = (props: Props) => {
   return (
-    <div>HistoryCurrent</div>
+    <div className='p-6'>HistoryCurrent</div>
   )
 }
 
