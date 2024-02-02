@@ -35,7 +35,10 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:14.1.0"],\
           ["postcss", "npm:8.4.33"],\
           ["react", "npm:18.2.0"],\
+          ["react-audio-visualize", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:1.1.3"],\
           ["react-dom", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:18.2.0"],\
+          ["react-player", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.14.1"],\
+          ["sass", "npm:1.70.0"],\
           ["tailwindcss", "npm:3.4.1"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
@@ -1224,6 +1227,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["deepmerge", [\
+      ["npm:4.3.1", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/deepmerge-npm-4.3.1-4f751a0844-10c0.zip/node_modules/deepmerge/",\
+        "packageDependencies": [\
+          ["deepmerge", "npm:4.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["define-data-property", [\
       ["npm:1.1.1", {\
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/define-data-property-npm-1.1.1-2b5156d112-10c0.zip/node_modules/define-data-property/",\
@@ -1280,7 +1292,10 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:14.1.0"],\
           ["postcss", "npm:8.4.33"],\
           ["react", "npm:18.2.0"],\
+          ["react-audio-visualize", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:1.1.3"],\
           ["react-dom", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:18.2.0"],\
+          ["react-player", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.14.1"],\
+          ["sass", "npm:1.70.0"],\
           ["tailwindcss", "npm:3.4.1"],\
           ["typescript", "patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
@@ -2395,6 +2410,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["immutable", [\
+      ["npm:4.3.5", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/immutable-npm-4.3.5-5958499808-10c0.zip/node_modules/immutable/",\
+        "packageDependencies": [\
+          ["immutable", "npm:4.3.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["import-fresh", [\
       ["npm:3.3.0", {\
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/import-fresh-npm-3.3.0-3e34265ca9-10c0.zip/node_modules/import-fresh/",\
@@ -2933,6 +2957,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["load-script", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/load-script-npm-1.0.0-32a3163a57-10c0.zip/node_modules/load-script/",\
+        "packageDependencies": [\
+          ["load-script", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["locate-path", [\
       ["npm:6.0.0", {\
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/locate-path-npm-6.0.0-06a1e4c528-10c0.zip/node_modules/locate-path/",\
@@ -2995,6 +3028,15 @@ const RAW_RUNTIME_STATE =
           ["negotiator", "npm:0.6.3"],\
           ["promise-retry", "npm:2.0.1"],\
           ["ssri", "npm:10.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["memoize-one", [\
+      ["npm:5.2.1", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/memoize-one-npm-5.2.1-ee0f8be979-10c0.zip/node_modules/memoize-one/",\
+        "packageDependencies": [\
+          ["memoize-one", "npm:5.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3232,7 +3274,7 @@ const RAW_RUNTIME_STATE =
           ["postcss", "npm:8.4.31"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:18.2.0"],\
-          ["sass", null],\
+          ["sass", "npm:1.70.0"],\
           ["styled-jsx", "virtual:4351b42dda6c198c302f1daef3a4201279aa202b8c735c9002e308ef695e5ada5cc59408a50fa995087c2d26aca8f21877b1b33246f620bfec2434442369c9c2#npm:5.1.1"]\
         ],\
         "packagePeers": [\
@@ -3780,6 +3822,32 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-audio-visualize", [\
+      ["npm:1.1.3", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-audio-visualize-npm-1.1.3-4843f9e559-10c0.zip/node_modules/react-audio-visualize/",\
+        "packageDependencies": [\
+          ["react-audio-visualize", "npm:1.1.3"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:1.1.3", {\
+        "packageLocation": "./.yarn/__virtual__/react-audio-visualize-virtual-638dc8408d/5/C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-audio-visualize-npm-1.1.3-4843f9e559-10c0.zip/node_modules/react-audio-visualize/",\
+        "packageDependencies": [\
+          ["react-audio-visualize", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:1.1.3"],\
+          ["@types/react", "npm:18.2.51"],\
+          ["@types/react-dom", "npm:18.2.18"],\
+          ["react", "npm:18.2.0"],\
+          ["react-dom", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-dom", [\
       ["npm:18.2.0", {\
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-dom-npm-18.2.0-dd675bca1c-10c0.zip/node_modules/react-dom/",\
@@ -3804,11 +3872,47 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-fast-compare", [\
+      ["npm:3.2.2", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-fast-compare-npm-3.2.2-45b585a872-10c0.zip/node_modules/react-fast-compare/",\
+        "packageDependencies": [\
+          ["react-fast-compare", "npm:3.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-is", [\
       ["npm:16.13.1", {\
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-is-npm-16.13.1-a9b9382b4f-10c0.zip/node_modules/react-is/",\
         "packageDependencies": [\
           ["react-is", "npm:16.13.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-player", [\
+      ["npm:2.14.1", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-player-npm-2.14.1-0a4419a490-10c0.zip/node_modules/react-player/",\
+        "packageDependencies": [\
+          ["react-player", "npm:2.14.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.14.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-player-virtual-fec57f51aa/5/C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-player-npm-2.14.1-0a4419a490-10c0.zip/node_modules/react-player/",\
+        "packageDependencies": [\
+          ["react-player", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.14.1"],\
+          ["@types/react", "npm:18.2.51"],\
+          ["deepmerge", "npm:4.3.1"],\
+          ["load-script", "npm:1.0.0"],\
+          ["memoize-one", "npm:5.2.1"],\
+          ["prop-types", "npm:15.8.1"],\
+          ["react", "npm:18.2.0"],\
+          ["react-fast-compare", "npm:3.2.2"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3977,6 +4081,18 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/safer-buffer-npm-2.1.2-8d5c0b705e-10c0.zip/node_modules/safer-buffer/",\
         "packageDependencies": [\
           ["safer-buffer", "npm:2.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["sass", [\
+      ["npm:1.70.0", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/sass-npm-1.70.0-153257249c-10c0.zip/node_modules/sass/",\
+        "packageDependencies": [\
+          ["sass", "npm:1.70.0"],\
+          ["chokidar", "npm:3.5.3"],\
+          ["immutable", "npm:4.3.5"],\
+          ["source-map-js", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
