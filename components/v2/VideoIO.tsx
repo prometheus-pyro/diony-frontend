@@ -7,6 +7,7 @@ import React, {
   useRef,
   useState,
 } from "react";
+import { FaFile } from "react-icons/fa";
 
 type Props = {
   children?: React.ReactNode;
@@ -32,7 +33,9 @@ const ForwardRef = forwardRef<HTMLVideoElement, Props>(
   ) => {
     const [isDragging, setIsDragging] = useState<boolean>(false);
 
-    const [videoUrl, setVideoUrl] = useState<string | null>(videoSource || null);
+    const [videoUrl, setVideoUrl] = useState<string | null>(
+      videoSource || null
+    );
 
     const dragRef = useRef<HTMLLabelElement | null>(null);
     const fileId = useRef<number>(0);
@@ -147,7 +150,7 @@ const ForwardRef = forwardRef<HTMLVideoElement, Props>(
     return (
       <div className={`${className}`}>
         {videoUrl ? (
-          <div className="w-full h-full">
+          <div className="w-full h-fullk">
             <video
               className="h-full"
               ref={ref}
@@ -169,13 +172,20 @@ const ForwardRef = forwardRef<HTMLVideoElement, Props>(
             <label
               className={
                 isDragging
-                  ? " w-full h-full flex justify-center items-center"
-                  : " w-full h-full flex justify-center items-center"
+                  ? "gap-6 w-full h-full flex flex-col justify-center items-center"
+                  : "gap-6 w-full h-full flex flex-col justify-center items-center"
               }
               htmlFor="fileUpload"
               ref={dragRef}
             >
-              <div>파일 첨부</div>
+              <FaFile size={64} style={{
+                color: "white",
+              }}/>
+              <div className="text-center">
+                동영상을 여기에 올려놔주세요
+                <br />
+                open your video files here
+              </div>
             </label>
 
             <div className="DragDrop-Files">

@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import Link from "next/link";
 import { forwardRef } from "react";
+import "./temp.css";
 
 type Props = {
   children?: React.ReactNode;
@@ -22,23 +23,37 @@ ForwardRef.displayName = "ForwardRef";
 
 const Header = ({ className }: Props) => {
   return (
-    <nav className={`${className} flex h-12`}>
-      <div>
-        <Link href={"/profile"}>프로필</Link>
+    // <nav className={`${className} flex h-12`}>
+    //   {/* <div> */}
+    //     {/* <Link href={"/profile"}>Profile</Link> */}
+    //   {/* </div> */}
+    //   {/* <div>
+    //     <Link href={"/generation"}>음악생성</Link>
+    //   </div> */}
+    //   <div>
+    //     <Link href={"/community"}>Community</Link>
+    //   </div>
+    //   <div>
+    //     <Link href={"/"}>Home</Link>
+    //   </div>
+    //   <div>
+    //     <Link href={"/auth"}>Sign In</Link>
+    //   </div>
+    // </nav>
+    <div className="header">
+      <div className="contents">
+        <div className="left">
+          <img className="logo" src="logo.png" alt="" />
+        </div>
+        <div className="right">
+          <ul className="menu">
+            <li className="location.href='community.html'">COMMUNITY</li>
+            <li className="location.href='generator.html'">GENERATOR</li>
+            <li className="location.href='login.html'">LOGIN</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <Link href={"/generation"}>음악생성</Link>
-      </div>
-      <div>
-        <Link href={"/community"}>커뮤니티</Link>
-      </div>
-      <div>
-        <Link href={"/"}>랜딩페이지</Link>
-      </div>
-      <div>
-        <Link href={"/auth"}>로그인</Link>
-      </div>
-    </nav>
+    </div>
   );
 };
 

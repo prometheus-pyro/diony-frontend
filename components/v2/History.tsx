@@ -22,7 +22,7 @@ interface HistoryChildProps extends Props {
 const ForwardRef = forwardRef<HTMLDivElement, Props>(
   ({ children, className, style }: Props, ref) => {
     return (
-      <div style={style} className={`${className}`} ref={ref}>
+      <div style={style} className={`${className} bg-white bg-opacity-30`} ref={ref}>
         {children}
       </div>
     );
@@ -52,17 +52,19 @@ const HistoryElement = ({
   }
 
   return (
-    <div className={`flex ${className} text-white`}>
+    <div className={`w-full ${className} justify-end text-white`}>
+      <div>{children}</div>
       <Image
+        className="mr-auto"
         src={imgSrc}
         alt="HistoryImg"
         width={64}
         height={64}
       />
-      <div>
+      <div className="mr-auto">
         {title}
       </div>
-      <button onClick={onClick} >
+      <button className="bg-[#56137a] px-4 py-2 rounded-lg" onClick={onClick} >
         프롬프트 불러오기
       </button>
     </div>

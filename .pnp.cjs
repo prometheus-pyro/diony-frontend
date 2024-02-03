@@ -43,6 +43,7 @@ const RAW_RUNTIME_STATE =
           ["react-audio-visualize", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:1.1.3"],\
           ["react-dom", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:18.2.0"],\
           ["react-drag-drop-files", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.3.10"],\
+          ["react-icons", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:5.0.1"],\
           ["react-player", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.14.1"],\
           ["remotion", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:4.0.104"],\
           ["sass", "npm:1.70.0"],\
@@ -2685,6 +2686,7 @@ const RAW_RUNTIME_STATE =
           ["react-audio-visualize", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:1.1.3"],\
           ["react-dom", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:18.2.0"],\
           ["react-drag-drop-files", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.3.10"],\
+          ["react-icons", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:5.0.1"],\
           ["react-player", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:2.14.1"],\
           ["remotion", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:4.0.104"],\
           ["sass", "npm:1.70.0"],\
@@ -5902,6 +5904,28 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-fast-compare-npm-3.2.2-45b585a872-10c0.zip/node_modules/react-fast-compare/",\
         "packageDependencies": [\
           ["react-fast-compare", "npm:3.2.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-icons", [\
+      ["npm:5.0.1", {\
+        "packageLocation": "../../../../C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-icons-npm-5.0.1-5e01385cf2-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "npm:5.0.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:5.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-icons-virtual-6beaf693ea/5/C:/Users/leebi/AppData/Local/Yarn/Berry/cache/react-icons-npm-5.0.1-5e01385cf2-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "virtual:26198174bdcacda60dde5c917e332519f126b4b7b3b347f522e278680fb1c69778af098dcb2e2b37e66e33bf8a3c96fc71d30c11b01bbd3ee074f946112189b9#npm:5.0.1"],\
+          ["@types/react", "npm:18.2.51"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
